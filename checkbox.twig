@@ -10,7 +10,7 @@
 </div>
 {% else %}
 <label{% if caption_off is defined %} class="option"{% endif %}>
-    <input type="checkbox" name="{{ name }}" checked>
+    <input type="checkbox" name="{{ name }}"{{ checked ?? true ? ' checked' }}>
     <span>{{ caption_on }}</span>
     {% if caption_off is defined %}
     <span>{{ caption_off }}</span>
