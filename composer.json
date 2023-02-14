@@ -1,0 +1,10 @@
+{
+  "name": "250/components",
+  "description": "Steam 250 UI components.",
+  "authors": [
+    {
+      "name": "Bilge",
+      "email": "bilge@scriptfusion.com"
+    }
+  ]
+}
