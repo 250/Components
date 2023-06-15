@@ -9,7 +9,10 @@
     <input type="radio" name="{{ name }}" value="2">
 </div>
 {% else %}
-<label{% if caption_off is defined %} class="option"{% endif %}>
+<label{% if caption_off is defined or negative ?? false %} class="
+    {{- caption_off ?? false ? 'option' }}{{ negative ?? false ? ' neg' -}}
+    "{% endif -%}
+>
     <input type="checkbox" name="{{ name }}"{{ checked ?? true ? ' checked' }}>
     <span>{{ caption_on }}</span>
     {% if caption_off is defined %}
