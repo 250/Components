@@ -1,4 +1,3 @@
-{% set tag = benefit is defined ? 'a' : 'span' %}
-<{{ tag }} class="tier t{{ tier }} micro"{% if benefit is defined %} data-bene="{{ benefit }}"{% endif %}
+<span class="tier t{{ tier }} micro"{% if benefit is defined %} data-bene="{{ benefit }}"{% endif %}
     >T{{ tier -}}
-</{{ tag }}>
+</span>
