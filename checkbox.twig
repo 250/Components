@@ -1,5 +1,5 @@
 {% if tri is defined %}
-<div class="tri">
+<div role="checkbox" tabindex="0" aria-checked="mixed">
     <label>
         <input type="radio" name="{{ name }}" value="0" checked>
         <span>{{ caption_on }}</span>
@@ -9,7 +9,7 @@
     <input type="radio" name="{{ name }}" value="2">
 </div>
 {% else %}
-<label{% if caption_off is defined or negative ?? false %} class="
+<label tabindex="0"{% if caption_off is defined or negative ?? false %} class="
     {{- caption_off ?? false ? 'option' }}{{ negative ?? false ? ' neg' -}}
     "{% endif -%}
 >
