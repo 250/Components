@@ -13,7 +13,7 @@
     {{- caption_off ?? false ? 'option' }}{{ negative ?? false ? ' neg' -}}
     "{% endif -%}
 >
-    <input type="checkbox" name="{{ name }}"{{ checked ?? true ? ' checked' }}>
+    <input type="checkbox" class="switch" name="{{ name }}"{{ checked ?? true ? ' checked' }}>
     <span>{{ caption_on }}</span>
     {% if caption_off is defined %}
     <span>{{ caption_off }}</span>
