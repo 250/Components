@@ -9,7 +9,7 @@
     <input type="radio" name="{{ name }}" value="2">
 </div>
 {% else %}
-<label tabindex="0"{% if caption_off is defined or negative ?? false %} class="
+<label {% if caption_off is defined or negative ?? false %} class="
     {{- caption_off ?? false ? 'option' }}{{ negative ?? false ? ' neg' -}}
     "{% endif -%}
 >
