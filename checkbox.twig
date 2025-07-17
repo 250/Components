@@ -2,6 +2,7 @@
 <div role="checkbox" tabindex="0" aria-checked="mixed">
     <label>
         <input type="radio" name="{{ name }}" value="0" checked>
+        <span></span>
         <span>{{ caption_on }}</span>
         <span>{{ caption_off }}</span>
     </label>
@@ -14,6 +15,7 @@
     "{% endif -%}
 >
     <input type="checkbox" class="switch" name="{{ name }}"{{ checked ?? true ? ' checked' }}>
+    <span></span>
     <span>{{ caption_on }}</span>
     {% if caption_off is defined %}
     <span>{{ caption_off }}</span>
