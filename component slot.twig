@@ -1,0 +1,4 @@
+{# Renders a named slot that reserves space and shows a loading animation until a Svelte component is mounted into it
+   via mountInSlot. Pass {animation: 'spinner'} for the centered-ring variant, otherwise the default sheen sweep. #}
+<div class="component-slot{{ animation is defined and animation == 'spinner' ? ' spinner' }}"
+    data-slot="{{ name }}" aria-busy="true"></div>
